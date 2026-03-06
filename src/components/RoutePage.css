@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #182848, #4b6cb7);
+}
+
+.route-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.route-card {
+  width: 100%;
+  max-width: 640px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  padding: 28px 32px 32px;
+  box-sizing: border-box;
+}
+
+.route-title {
+  margin: 0 0 8px;
+  font-size: 26px;
+  text-align: left;
+  color: #111827;
+}
+
+.route-subtitle {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.route-inputs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.route-input-group {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.route-input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.route-input-group input {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 8px 14px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.route-input-group input:focus {
+  border-color: #4b6cb7;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.16);
+}
+
+.route-input-group select {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  padding: 8px 14px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.route-input-group select:focus {
+  border-color: #4b6cb7;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.16);
+}
+
+.route-button {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #f9fafb;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+.route-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.25);
+}
+
+.route-button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.2);
+}
+
+.route-button:disabled {
+  cursor: default;
+  opacity: 0.65;
+  box-shadow: none;
+}
+
+.route-error {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #b91c1c;
+}
+
+.route-result {
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.route-path {
+  margin: 4px 0 12px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.route-cost {
+  margin: 4px 0;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.route-note {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.route-list {
+  margin: 6px 0 8px;
+  padding-left: 18px;
+  font-size: 13px;
+  color: #111827;
+}
+
+.route-map-wrapper {
+  margin-top: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
+}
+
+.route-map {
+  width: 100%;
+  height: 340px;
+}
+
+@media (max-width: 640px) {
+  .route-card {
+    padding: 20px 18px 22px;
+  }
+
+  .route-title {
+    font-size: 22px;
+  }
+}
+

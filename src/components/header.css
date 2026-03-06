@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Matangi:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sen:wght@400..800&display=swap');
+
+.header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #3b82f6);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.alert {
+    margin-right: 10px;
+    transform: scale(1.3, 1.3);
+    padding: 5px 5px;
+    clip-path: circle();
+    background-color: black;
+    color: aqua;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: 'Matangi';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sos {
+    font-family: "Matangi";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Material UI Icon */
+.ui-icon {
+    background: black;
+    padding: 5px 5px;
+    clip-path: circle();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav>div.icon {
+    color: aqua;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    font-family: "Matangi";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 8px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.nav>div.icon>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.nav>div.icon:hover {
+    background: #00e0ff;
+    transition: background-color 0.2s;
+
+    a {
+        color: black;
+    }
+}
+
+.btn-cta {
+    background-color: #00e0ff;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: unset;
+}
+
+
+
+.sos {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 40px;
+    background: red;
+    background-size: 400% 400%;
+    transition: 0.4s ease;
+}
+
+.btn-cta {
+    background: red;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-shadow: 0 0 3px black;
+}
+
+/* Animate wrapper on hover */
+.sos:hover {
+    transform: scale(1.05, 1.05);
+    transition: transform 0.2s;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsive */
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-family: 'poppins';
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: 'Nunito';
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Body Section */
+.body-section {
+    padding: 3rem 2rem;
+    background: #030a1b;
+}
+
+/* .body-section:hover{
+    background: #0facbe9a;
+    transition: background 0.3s ease;
+
+} */
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 300% 300%;
+    animation: blueGradientMove 8s ease infinite;
+
+    border-radius: 18px;
+    padding: 28px;
+    max-width: 360px;
+    color: #ffffff;
+
+    box-shadow: 0 15px 15px rgba(0, 150, 255, 0.35);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Soft shine overlay */
+.feature-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent 60%);
+    transform: rotate(25deg);
+    pointer-events: none;
+}
+
+/* Hover effect */
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 180, 255, 0.5);
+}
+
+/* Gradient animation */
+@keyframes blueGradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Heading */
+.feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: "Matangi";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-wrap: balance;
+}
+
+/* Paragraph */
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "poppins";
+    font-weight: 300;
+}
+
+
+/* About Section */
+.about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h4 {
+    color: #667eea;
+    font-size: 2rem;
+    margin: 0 0 1.5rem 0;
+    font-family: 'Matangi';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-section p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0;
+    font-family: 'poppins';
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav.active {
+        max-height: 300px;
+    }
+
+    .nav a,
+    .btn-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-cta {
+        padding: 0.75rem 1rem;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .about-section {
+        padding: 2rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #3b82f6);
+    color: white;
+    padding: 3rem 0 1rem 0;
+    margin-top: 5rem;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Matangi', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-alert {
+    font-size: 2rem;
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.footer-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-section a:hover {
+    color: #00d9ff;
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+}
+
+.social-icon:hover {
+    background-color: #00d9ff;
+    color: #1e3c72;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
+/* ═══════════════════════════════════════════════
+   SOS EMERGENCY MODAL
+   ═══════════════════════════════════════════════ */
+
+/* Button active pulse */
+.sos.sos-active {
+    animation: sos-pulse-ring 1.5s ease-in-out infinite;
+}
+
+@keyframes sos-pulse-ring {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 14px rgba(255, 0, 0, 0);
+    }
+}
+
+/* Modal Overlay */
+.sos-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.25s ease;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Container */
+.sos-modal {
+    background: linear-gradient(145deg, #1a0a0a, #2a0f0f, #1e0c14);
+    border: 1px solid rgba(255, 50, 50, 0.3);
+    border-radius: 24px;
+    padding: 32px 28px;
+    max-width: 420px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 25px 60px rgba(255, 0, 0, 0.2), 0 0 100px rgba(255, 0, 0, 0.05);
+    animation: slideUp 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.sos-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s;
+}
+
+.sos-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Modal Header */
+.sos-modal-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.sos-modal-icon-pulse {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff1e56, #c20030);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    animation: icon-pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(255, 30, 86, 0.5);
+}
+
+@keyframes icon-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 30px rgba(255, 30, 86, 0.5);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 50px rgba(255, 30, 86, 0.8);
+    }
+}
+
+.sos-modal-header h2 {
+    color: #ff4d6d;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 0 0 6px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.sos-modal-header p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Emergency Call Buttons */
+.sos-call-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sos-call-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sos-call-btn div {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-label {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.call-number {
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+.women-helpline {
+    background: linear-gradient(135deg, #e91e63, #c2185b);
+    box-shadow: 0 4px 20px rgba(233, 30, 99, 0.3);
+}
+
+.women-helpline:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(233, 30, 99, 0.5);
+}
+
+.police-btn {
+    background: linear-gradient(135deg, #2196f3, #1565c0);
+    box-shadow: 0 4px 20px rgba(33, 150, 243, 0.3);
+}
+
+.police-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(33, 150, 243, 0.5);
+}
+
+.ambulance-btn {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
+}
+
+.ambulance-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.5);
+}
+
+/* Location Section */
+.sos-location-section {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.sos-location-section h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sos-location-loading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sos-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-top-color: #ff4d6d;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sos-location-error {
+    color: #ff6b6b;
+    font-size: 0.85rem;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sos-location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sos-map-link {
+    color: #4fc3f7;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sos-map-link:hover {
+    color: #81d4fa;
+    text-decoration: underline;
+}
+
+.sos-share-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.sos-share-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sos-share-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.whatsapp-btn {
+    background: rgba(37, 211, 102, 0.25);
+    color: #25d366;
+}
+
+.whatsapp-btn:hover {
+    background: rgba(37, 211, 102, 0.4);
+}
+
+.copy-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Siren Button */
+.sos-siren-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 14px;
+    border: 2px solid rgba(255, 152, 0, 0.4);
+    background: rgba(255, 152, 0, 0.1);
+    color: #ffb74d;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sos-siren-btn:hover {
+    background: rgba(255, 152, 0, 0.2);
+    border-color: rgba(255, 152, 0, 0.6);
+    transform: translateY(-1px);
+}
+
+.sos-siren-btn.siren-on {
+    background: linear-gradient(135deg, #ff6f00, #e65100);
+    border-color: #ff8f00;
+    color: #fff;
+    animation: siren-glow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes siren-glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 111, 0, 0.3);
+    }
+
+    to {
+        box-shadow: 0 0 30px rgba(255, 111, 0, 0.7);
+    }
+}
+
+/* Responsive SOS Modal */
+@media (max-width: 480px) {
+    .sos-modal {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+
+    .sos-modal-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .sos-call-btn {
+        padding: 14px 16px;
+    }
+
+    .call-number {
+        font-size: 1.1rem;
+    }
+
+    .sos-share-buttons {
+        flex-direction: column;
+    }
+}
